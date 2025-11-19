@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Neon Ravens — News</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">NR</div>
+      <div class="title">
+        <div class="team-name">Neon Ravens</div>
+        <div class="tag">Rise in the Night</div>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="team.html" class="nav-link">Team</a>
+      <a href="news.html" class="nav-link">News</a>
+      <a href="shop.html" class="nav-link">Shop</a>
+      <button id="cartBtnNews" class="cart-btn">Cart <span id="badgeNews" class="badge">0</span></button>
+    </nav>
+  </header>
+
+  <main class="news-page">
+    <section class="news-list">
+      <article class="news-card neon">
+        <h2>Neon Ravens Sweep Semifinals 3-0</h2>
+        <p class="muted">An incredible display from Zephyr secured a place in the finals.</p>
+        <a href="#" class="small-link">Continue reading →</a>
+      </article>
+
+      <article class="news-card neon">
+        <h2>New Merch Drop: Neon Jersey</h2>
+        <p class="muted">Limited edition jerseys now available in the shop.</p>
+        <a href="shop.html" class="small-link">Shop jerseys →</a>
+      </article>
+
+      <article class="news-card neon">
+        <h2>Roster Update: Training Bootcamp</h2>
+        <p class="muted">The team is in bootcamp preparing for the International Series.</p>
+        <a href="#" class="small-link">Details →</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>© Neon Ravens — Demo Site</div>
+  </footer>
+
+  <div id="cartModalNews" class="modal" aria-hidden="true">
+    <div class="modal-panel">
+      <div class="modal-header">
+        <h3>Your Cart</h3>
+        <button id="closeCartNews" class="btn small ghost">Close</button>
+      </div>
+      <div id="cartContentNews" class="cart-content"></div>
+      <div class="modal-footer">
+        <div class="total">Total: €<span id="totalAmountNews">0.00</span></div>
+        <div>
+          <button id="checkoutNews" class="btn">Checkout</button>
+          <button id="clearCartNews" class="btn ghost">Clear</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
