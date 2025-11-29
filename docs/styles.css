@@ -302,3 +302,34 @@ body{background:
   height: 100%;
   object-fit: cover;     /* Cover the container without stretching */
 }
+
+.site-footer {
+    padding: 20px;
+    background: #111;
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* looks good on mobile */
+    gap: 10px;
+}
+
+.site-footer a.footer-instagram {
+    display: inline-flex;
+    padding: 8px;
+    border-radius: 50%;
+    transition: 0.25s ease;
+    color: #eee;
+    background: rgba(255,255,255,0.08);
+}
+
+.site-footer a.footer-instagram svg {
+    width: 28px;
+    height: 28px;
+}
+
+.site-footer a.footer-instagram:hover {
+    background: rgba(255,255,255,0.18);
+    transform: scale(1.1);
+    color: #fff;
+}
